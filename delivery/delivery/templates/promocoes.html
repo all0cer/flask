@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import "macros/listagem.html" as listagem %}
+
+{% block topo%}
+<section class="hero is-link">
+      <div class="hero-body">
+        <p class="title">
+          PyFoods
+        </p>
+        <p class="subtitle">
+          As melhores promoções!
+        </p>
+      </div>
+    </section>
+{% endblock topo %}
+
+{% block head %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Confira Abaixo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  </head>
+{% endblock %}
+
+{% block colunas %}
+    <div class="columns">
+    {{ listagem.cards ([1, 2, 3, 4]) }}
+    </div>
+  {% endblock colunas %}
+
+{% block message %}
+{% endblock %}
