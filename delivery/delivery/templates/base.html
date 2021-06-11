@@ -32,7 +32,7 @@
             Início
           </a>
     
-          <a class="navbar-item">
+          <a class="navbar-item" href="{{ url_for('site.promocoes') }}">
             Promoções
           </a>
     
@@ -42,10 +42,8 @@
             </a>
     
             <div class="navbar-dropdown">
-              <a class="navbar-item">
-                Ver
-              </a>
-              <a class="navbar-item" hrfe = "http://127.0.0.1:5000/sobre">
+            
+              <a class="navbar-item" href="{{ url_for('site.about') }}">
                 Sobre
               </a>
               <hr class="navbar-divider">
