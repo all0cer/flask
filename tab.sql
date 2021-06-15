@@ -1,0 +1,6 @@
+-- SQLite
+CREATE TABLE todos(
+ ip INTEGER PRIMARY KEY,
+ tarefa TEXT NOT NULL,
+ done INTEGER NOT NULL
+);
