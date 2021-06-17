@@ -1,7 +1,7 @@
 from enum import Flag
 import click
 from delivery.exts.db import db
-from delivery.exts.site import models
+from delivery.exts.db import models
 
 
 def init_app(app):

@@ -4,5 +4,6 @@ install:
 test:
 	pytest tests/ -v
 
-dev:
-	export FLASK_ENV=development
+start-db:
+	FLASK_APP:delivery/app.py flask create-db 
+	FLASK_APP:delivery/app.py flask db upgrade 

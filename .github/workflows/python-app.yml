@@ -27,6 +27,10 @@ jobs:
     - name: Install dependencies
       run: |
           make install
+
+    - name: Database_migrations
+      run: |
+          make start-db
      
     - name: Test with pytest
       run: |
