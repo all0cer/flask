@@ -1,0 +1,22 @@
+[default]
+DEBUG = false
+INSTABLE_APPS=[
+    "delivery.exts.db:init_app",
+    "delivery.exts.auth:init_app",
+    "delivery.exts.admin:init_app",
+    "delivery.exts.migrates:init_app",
+    "delivery.exts.cli:init_app",
+    "delivery.exts.site:init_app"
+]
+ADMINNAME= 'PyFoods'
+TEMPLATE_MODE = 'bootstrap2'
+
+[development]
+    DEBUG = true
+    SECRET_KEY = 'acas34x45lk'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///delivery.db'
+    FLASK_ADMIN_SWATCH = 'cerulean'
+
+[production]
+SQLALCHEMY_DATABASE_URI = false
+

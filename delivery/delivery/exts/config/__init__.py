@@ -1,2 +1,5 @@
+from dynaconf import FlaskDynaconf
+
 def init_app(app):
-    app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///delivery.db'
+    FlaskDynaconf(app)
+    app.config.load_extensions("INSTABLE_APPS")

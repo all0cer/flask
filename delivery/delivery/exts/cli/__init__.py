@@ -15,7 +15,7 @@ def init_app(app):
     @click.option("--passwd", "-p")
     @click.option("--admin", "-a", is_flag=True, default=False)
     def add_new_user(email, passwd, admin):
-        user = models.User(
+        user = User(
             email = email,
             passwd = passwd,
             admin = admin
